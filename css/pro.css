@@ -1,0 +1,228 @@
+.heading{
+    margin-top: 6%;
+    background-color: #e882d9;
+}
+.title{
+    font-size: 4rem;
+}
+.message{
+    position: sticky;
+    top:15%;
+    margin:0 auto;
+    max-width: 1000px;
+    background-color: rgb(233, 224, 224);
+    display: flex;
+    align-items: center;
+    padding:1rem;
+    gap:1.5rem;
+    justify-content: space-between;
+}
+.message span{
+    color:black;
+    font-size: 1.2rem;
+}
+.message i{
+    font-size:1rem;
+    color:rgb(211, 55, 55);
+    cursor: pointer;
+}
+.message i:hover{
+    transform: rotate(90deg);
+}
+.btn,.delete-btn,.option-btn{
+    display: inline-block;
+    border-radius:.5rem;
+    margin-top:1rem;
+    font-size:1.2rem;
+    cursor:pointer;
+    padding:.3rem 1rem;
+    text-transform: capitalize;
+    border:.3rem solid grey;
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    gap:1rem;
+    max-width: 1000px;
+    justify-content:center;
+}
+.products .box-container .box{
+    background-color: white;
+    margin-top: 30%;
+    border:.5rem solid grey;
+    box-shadow: #666;
+    border-radius: .5rem;
+    padding:2rem;
+    text-align: center;
+    position: relative;
+}
+.products .box-container .box .image{
+    height:50%;
+    width:100%;
+    object-fit: cover;
+}
+.products .box-container .box .fa-eye,
+.products .box-container .box .price{
+    position: absolute;
+    top:.5rem;
+}
+.products .box-container .box .price{
+    font-size: 1rem;
+    padding:1rem;
+    background-color: #e84393;
+    color:white;
+    border-radius: .5rem;
+    left:1rem;
+}
+.products .box-container .box .fa-eye{
+    right: 1rem;
+    height:3rem;
+    width:3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    background-color: white;
+    color:black;
+    border:.3rem solid grey;
+}
+.products .box-container .box .name{
+    margin:1%;
+    font-size: 1.5rem;
+    color:black;
+}
+.products .box-container .box .details{
+    margin:3%;
+    font-size: 1.5rem;
+    color:black;
+}
+.products .box-container .box .qty{
+    width:100%;
+    padding:1.2rem 1.4rem;
+    font-size:1.5rem;
+    color:black;
+    border:.5rem solid grey;
+}
+.products .box-container .box .btn,
+.products .box-container .box .option-btn{
+    width:50%;
+}
+.messages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    gap:1rem;
+    margin-top: 10%;
+    max-width: 1000px;
+    justify-content:center;
+}
+.messages .box-container .box{
+    background-color: white;
+    border:.3rem solid grey;
+    box-shadow: #666;
+    border-radius: .5rem;
+    margin:2%;
+    text-align: center;
+    position: relative;
+}
+.message .box-container .box form{
+    background-color: white;
+    border: .3rem solid grey;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: #666;
+}
+.placed-orders .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    gap:1rem;
+    margin-top: 5%;
+    max-width: 1000px;
+    justify-content:center;
+}
+.placed-orders .box-container .box{
+    background-color: white;
+    border:.3rem solid grey;
+    box-shadow: #666;
+    border-radius: .5rem;
+    margin:2%;
+    text-align: center;
+    position: relative;
+}
+.cart .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    gap:1rem;
+    max-width: 1000px;
+}
+.cart .box-container .box{
+    background-color: white;
+    border:.3rem solid grey;
+    box-shadow: #666;
+    border-radius: .5rem;
+    margin:2%;
+    text-align: center;
+    position: relative;
+}
+.cart .box-container .box .image{
+    height:30%;
+    width:30%;
+    object-fit: cover;
+}
+.cart .box-container .box .qty{
+    width:50%;
+    padding:1rem 1rem;
+    font-size:1rem;
+    color:black;
+    border:.3rem solid grey;
+}
+.cart .box-container .box .fa-times{
+    position: relative;
+    bottom:3rem;
+    right:10%;
+    border:.2rem solid gray;
+}
+.display-order{
+    background-color: white;
+    border:.3rem solid grey;
+    box-shadow: #666;
+    border-radius: .5rem;
+    width:30%;
+    margin-left: 35%;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+.display-order p{
+    font-size: 1rem;
+    display: inline;
+}
+.checkout form{
+    background-color: white;
+    border: .3rem solid grey;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: #666;
+}
+.checkout form h3{
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(197, 182, 182);
+    color:black;
+    text-align: center;
+    text-transform: capitalize;
+}
+.checkout form .flex{
+    display: inline;
+    gap:1rem;
+}
+.checkout form .flex .inputBox input,
+.checkout form .flex .inputBox select{
+     margin:1rem 0;
+     width:100%;
+     background-color: white;
+     padding: 1rem;
+     border:.2rem solid #666;
+     font-size: 1rem;
+     color: black;
+}

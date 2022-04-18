@@ -1,0 +1,356 @@
+:root{
+    --pink:#e84393;
+}
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+    font-family:'Dosis',sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size:4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255,51,153,.05);
+}
+.heading span{
+    color:var(--pink);
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius:5rem;
+    background: white;
+    padding:.9rem 3.5rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+    }
+.btn:hover{
+       background: var(--pink);
+   } 
+.btn,.delete-btn,.option-btn{
+    display: inline-block;
+    border-radius:.5rem;
+    margin-top:1rem;
+    font-size:1.2rem;
+    cursor:pointer;
+    padding:.3rem 1rem;
+    text-transform: capitalize;
+    border:.3rem solid grey;
+}   
+header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    background: white;
+    padding:1.3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+ header .navbar  a{
+     font-size: 2rem;
+     padding:0 1.5rem;
+     color:#666;
+     text-decoration: none;
+ }   
+ header .navbar a:hover{
+     color:var(--pink);
+    border:.1rem solid black;
+    }
+
+    
+header .icons a{
+    font-size:2.5rem;
+    color:#333;
+    margin-left:1.5rem;
+}
+header .icons a:hover{
+    color:var(--pink);
+}
+header .icons a span{
+    font-size:1rem;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size:3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+.header .account-box{
+    position: absolute;
+    top:120%;right:.5rem;
+    width:13rem;
+    border-radius:.1rem;
+    box-shadow: #666;
+    background-color: white;
+    padding:1rem;
+    text-align: center;
+    border:#999;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+.header .account-box.active{
+    display: inline-block;
+}
+.header  .account-box p{
+    font-size: 1.2rem;
+    color:black;
+    line-height: 1;
+}
+.header  .account-box p span{
+    color:rgb(184, 44, 184);
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/home-bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width:50rem;
+    
+}
+.home .content h3{
+font-size:6rem;
+color: #333;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding:1rem 0;
+    line-height:1.5;
+}
+.home .content p{
+font-size: 3.5rem;
+color:#999;
+padding:1rem 0;
+line-height: 1.5;
+}
+.about .row{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap:wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+  flex:1 1 40rem;
+  position: relative;
+}
+.about .row .video-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height:100%;
+    object-fit: cover;
+}
+.about .row .video-container h3{
+    position:absolute;
+    top:50%;transform: translateY(200%);
+    font-size:3rem;
+    background: white;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.about .row .content{
+    flex:1 1 40rem;
+}
+.about .row .content h3{
+    font-size:3rem;
+    color:#333;
+}
+.about .row .content p{
+    font-size:1.5rem;
+    color:#9999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+    }
+    /*abt1*/
+.about1 .flex{    
+max-width:1500px;
+margin:0 auto;
+display: flex;
+align-items:center;
+flex-wrap:wrap;
+gap:1.5rem;
+}
+.about1 .flex .image{
+    flex:1 1 30rem;
+    border:1rem solid rgb(239, 235, 235);
+}
+.about1 .flex .image img{
+    width:100%;
+}
+.about1 .flex .content{
+flex:1 1 40rem;
+text-align: center;
+}
+.about1 .flex .content h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: black;
+}
+.about1 .flex .content p{
+    padding: 1rem 0;
+    font-size:1rem;
+    color:#333;
+    line-height: 2;
+}
+.icons-container{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top:5rem;
+    padding-bottom:5rem;
+}
+
+.icons-container .icons{
+background: white;
+padding:2rem;
+display: flex;
+align-items:center;
+flex:1 1 25rem;
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-top:2rem;
+}
+.icons-container .icons h3{
+    color:#333;
+    padding-bottom:.5rem;
+    font-size:1.5rem;
+}
+.icons-container .icons span{
+    color:#555;
+    font-size:1.3rem;
+}
+.footer .box-container{
+     display: flex;
+     flex-wrap:wrap;
+     gap:1.5rem;
+}
+.footer .box-container .box{
+    flex:1 1 25rem;
+}
+.footer .box-container .box h3{
+    color:#333;
+    font-size:2.5rem;
+    padding:1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color:#666;
+    font-size:1.5rem;
+    padding:1rem 0;
+}
+.footer .box-container .box a:hover{
+    color:var(--pink);
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    margin-top: 1.5rem;
+    padding-top:2.5rem;
+    font-size:2rem;
+    color:#333;
+    border-top:.1rem solid rgba(0,0,0,.1);
+}
+.footer .credit .span{
+    color:var(--pink);
+}
+
+/*media queries*/
+@media (max-width:991px){
+    html{
+        font-size:55%;
+        }
+    header{
+        padding:2rem;
+    }  
+    section{
+        padding:2rem;
+    }  
+    .home{
+        background-position: left;
+    }
+}
+@media(max-width:768px) {
+    header .fa-bars{
+      display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        text-align: center;
+        background: white;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path:polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0,100% 0,100% 100%,0% 100%);
+    } 
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background: #fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }   
+     .home .content h3{
+         font-size:5rem;
+     }
+     .home .content span{
+         font-size:2.5rem;
+     }
+     .icons-container .icons h3{
+        
+        font-size:2rem;
+    }
+    .icons-container .icons span{
+        color:#555;
+        font-size:1.7rem;
+    }
+    }
+@media (max-width:450px){
+    html{
+        font-size:50%;
+        }
+        .heading{
+font-size:3rem;
+        }
+      
+}

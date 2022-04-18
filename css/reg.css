@@ -1,0 +1,97 @@
+body{
+    background:whitesmoke ;
+}
+section{
+    padding:3rem 2rem;
+}
+.btn,.delete-btn,.option-btn{
+    display: inline-block;
+    border-radius:.5rem;
+    margin-top:1rem;
+    font-size:1.2rem;
+    color:white;
+    cursor:pointer;
+    padding:.5rem 2rem;
+    text-transform: capitalize;
+}
+.message{
+    position: sticky;
+    top:0;
+    margin:0 auto;
+    max-width: 1000px;
+    background-color: rgb(233, 224, 224);
+    display: flex;
+    align-items: center;
+    padding:1rem;
+    gap:1.5rem;
+    justify-content: space-between;
+}
+.message span{
+    color:black;
+    font-size: 1.2rem;
+}
+.message i{
+    font-size:1rem;
+    color:rgb(211, 55, 55);
+    cursor: pointer;
+}
+.message i:hover{
+    transform: rotate(90deg);
+}
+.btn{
+    background-color: rgb(203, 52, 152);
+}
+.delete-btn{
+    background-color: rgb(230, 44, 44);
+}
+.option-btn{
+    background-color: rgb(211, 151, 39);
+}
+.btn:hover,.delete-btn:hover,.option-btn:hover{
+background-color: black;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:90vh;
+}
+.form-container form{
+padding:2rem;
+border-radius:.5rem;
+border:rgb(184, 82, 229);
+background:#c57f7f52;
+box-shadow: #666;
+width:35rem;
+text-align: center;
+}
+.form-container form h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color:black;
+    margin-bottom: 1rem;
+}
+.form-container form .box{
+width:80%;
+padding:1.1rem 1.2rem;
+font-size:1.2rem;
+color:rgb(31, 14, 14);
+border:#666;
+background-color: antiquewhite;
+margin:1rem 0;
+border-radius: .5rem;
+}
+.form-container form .box:hover{
+    background-color: rgb(233, 229, 229);
+}
+.form-container form p{
+    margin-top:1.5rem;
+    font-size:1rem;
+    color:#666;
+}
+.form-container form p a{
+    color:rgb(212, 89, 130);
+}
+.form-container form p a:hover{
+    text-decoration: none;
+}
