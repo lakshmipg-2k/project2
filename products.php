@@ -12,7 +12,7 @@ $details=mysqli_real_escape_string($conn, $_POST['details']);
 $image = $_FILES['image']['name'];
 $image_size = $_FILES['image']['size'];
 $image_tmp_name = $_FILES['image']['tmp_name'];
-$image_folder = "images./".$image; 
+$image_folder = "img./".$image; 
 $select_product_name = mysqli_query($conn,"select name from products where name='$name'") or die('query failed');
 if(mysqli_num_rows($select_product_name) > 0){
 $message[]='product name already exist';
